@@ -1,37 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-label="zerobyte: small, fast tools for AI agents, written in Rust">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-label="&gt;_ haszerobyte: small, fast tools for AI agents, written in Rust">
+  <defs>
+    <radialGradient id="bg" cx="0.78" cy="0.45" r="0.75">
+      <stop offset="0" stop-color="#2a1114"/>
+      <stop offset="0.55" stop-color="#110708"/>
+      <stop offset="1" stop-color="#070405"/>
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="card"><rect x="1" y="1" width="898" height="218" rx="12"/></clipPath>
+  </defs>
   <style>
-    .bg   { fill: #f6f8fa; }
-    .edge { stroke: #d0d7de; }
-    .name { fill: #1f2328; }
-    .sub  { fill: #59636e; }
-    .hex  { fill: #8c959f; }
-    .acc  { fill: #d4572a; }
-    @media (prefers-color-scheme: dark) {
-      .bg   { fill: #0d1117; }
-      .edge { stroke: #30363d; }
-      .name { fill: #e6edf3; }
-      .sub  { fill: #9198a1; }
-      .hex  { fill: #484f58; }
-      .acc  { fill: #f0883e; }
-    }
-    text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    text { font-family: ui-monospace, "JetBrains Mono", SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .cursor { animation: blink 1.1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
   </style>
 
-  <rect class="bg edge" x="0.5" y="0.5" width="899" height="219" rx="12" stroke-width="1"/>
+  <rect x="1" y="1" width="898" height="218" rx="12" fill="url(#bg)"/>
 
-  <!-- a faint hex dump down the right side: the "zero byte" motif -->
-  <g class="hex" font-size="13" opacity="0.55">
-    <text x="668" y="44">00 00 00 00 00 00 00 00</text>
-    <text x="668" y="66">00 00 00 00 00 00 00 00</text>
-    <text x="668" y="88">00 00 00 <tspan class="acc">00</tspan> 00 00 00 00</text>
-    <text x="668" y="110">00 00 00 00 00 00 00 00</text>
-    <text x="668" y="132">00 00 00 00 00 00 00 00</text>
-    <text x="668" y="154">00 00 00 00 00 00 00 00</text>
-    <text x="668" y="176">00 00 00 00 00 00 00 00</text>
+  <g clip-path="url(#card)">
+    <!-- the "zero byte" motif: a faint hex dump, one byte lit -->
+    <g fill="#4a2a2e" font-size="13">
+      <text x="664" y="44">00 00 00 00 00 00 00 00</text>
+      <text x="664" y="66">00 00 00 00 00 00 00 00</text>
+      <text x="664" y="88">00 00 00 <tspan fill="#ff3b44" filter="url(#glow)">00</tspan> 00 00 00 00</text>
+      <text x="664" y="110">00 00 00 00 00 00 00 00</text>
+      <text x="664" y="132">00 00 00 00 00 00 00 00</text>
+      <text x="664" y="154">00 00 00 00 00 00 00 00</text>
+      <text x="664" y="176">00 00 00 00 00 00 00 00</text>
+    </g>
+    <!-- glitch dashes, as in the avatar -->
+    <g fill="#e5323b" opacity="0.55">
+      <rect x="560" y="60" width="26" height="4"/>
+      <rect x="592" y="60" width="8" height="4"/>
+      <rect x="548" y="70" width="40" height="4"/>
+      <rect x="600" y="150" width="18" height="4"/>
+      <rect x="576" y="160" width="34" height="4"/>
+      <rect x="622" y="160" width="6" height="4"/>
+    </g>
   </g>
 
-  <text class="acc" x="56" y="78" font-size="18" font-weight="600">0x00</text>
-  <text class="name" x="54" y="128" font-size="52" font-weight="700" letter-spacing="-1">zerobyte</text>
-  <text class="sub" x="56" y="166" font-size="17">small, fast tools for AI agents</text>
-  <text class="sub" x="56" y="190" font-size="17">written in Rust</text>
+  <text x="54" y="122" font-size="54" font-weight="700" letter-spacing="-1"><tspan fill="#ff3b44" filter="url(#glow)">&gt;_</tspan><tspan fill="#ecedef" dx="20">has</tspan><tspan fill="#ff3b44" filter="url(#glow)">zero</tspan><tspan fill="#ecedef">byte</tspan><tspan class="cursor" fill="#ff3b44" dx="4">▌</tspan></text>
+  <text x="58" y="162" font-size="17" fill="#9a9ca3">small, fast tools for AI agents, written in Rust</text>
+
+  <!-- red rim -->
+  <rect x="1.5" y="1.5" width="897" height="217" rx="12" fill="none" stroke="#e5323b" stroke-width="2" opacity="0.85"/>
 </svg>
