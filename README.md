@@ -1,24 +1,24 @@
-<h1 align="center">zerobyte</h1>
-
 <p align="center">
-  Small, fast tools for AI agents, written in Rust.
+  <img src="assets/banner.svg" width="100%" alt="zerobyte: small, fast tools for AI agents, written in Rust">
 </p>
 
 <p align="center">
+  <a href="https://github.com/haszerobyte/Ratatoskr"><img src="https://img.shields.io/badge/featured-ratatoskr-d4572a" alt="featured: ratatoskr"></a>
   <img src="https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white" alt="Rust">
   <img src="https://img.shields.io/badge/MCP-tools-6f42c1" alt="MCP">
-  <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black" alt="Linux">
 </p>
 
----
+### 👋 Hi, I'm zerobyte
 
-### What I build
+I build the plumbing that lets coding agents (Claude Code, Codex, Cursor, …)
+reach the outside world. My rules for it:
 
-I make the plumbing that lets coding agents (Claude Code, Codex, Cursor, …)
-reach the outside world: lean binaries, no API keys where they can be
-avoided, polite to the sites they touch, and safe by default.
+- **Lean.** One small binary that starts instantly and idles at a few megabytes.
+- **No keys if avoidable.** It works out of the box; paid APIs are optional fallbacks.
+- **Polite.** Paces itself per site and backs off when a site says no.
+- **Safe by default.** Never lets an agent reach into your local network.
 
-### Featured project
+### 🐿️ Featured: ratatoskr
 
 <table>
   <tr>
@@ -32,25 +32,87 @@ avoided, polite to the sites they touch, and safe by default.
       web search and page fetching for AI agents, in pure Rust, with no API key.
       <br><br>
       <ul>
-        <li><code>web_search</code>: a meta-search over Yahoo, DuckDuckGo, Bing and Yandex, with web, news, images, videos and books</li>
-        <li><code>web_fetch</code>: pages and PDFs as clean text with their links kept; never reaches your local network</li>
-        <li>One 10&nbsp;MB binary: an MCP server, a CLI and a library</li>
+        <li><code>web_search</code>: a meta-search over Yahoo, DuckDuckGo, Bing and Yandex for web pages, news, images, videos and books</li>
+        <li><code>web_fetch</code>: pages and PDFs as clean text with their links kept</li>
+        <li>An MCP server, a CLI and a Rust library, all in one 10&nbsp;MB binary</li>
       </ul>
       <a href="https://crates.io/crates/ratatoskr-web"><img src="https://img.shields.io/crates/v/ratatoskr-web" alt="crates.io"></a>
       <a href="https://docs.rs/ratatoskr-web"><img src="https://img.shields.io/docsrs/ratatoskr-web" alt="docs.rs"></a>
       <a href="https://github.com/haszerobyte/Ratatoskr/releases"><img src="https://img.shields.io/github/v/release/haszerobyte/Ratatoskr" alt="release"></a>
+      <a href="https://github.com/haszerobyte/Ratatoskr/stargazers"><img src="https://img.shields.io/github/stars/haszerobyte/Ratatoskr?style=flat" alt="stars"></a>
     </td>
   </tr>
 </table>
 
-Try it in Claude Code:
+Compared with the reference MCP fetch server, run as MCP servers:
+
+| | ratatoskr | [mcp-server-fetch](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch) |
+|---|---|---|
+| ready to answer | **0.01 s** | 3.58 s |
+| memory at idle | **6 MB** | 95 MB |
+| memory after the calls | **44 MB** | 143 MB |
+
+#### Add it to your agent
+
+Install it from the [releases](https://github.com/haszerobyte/Ratatoskr/releases),
+or with `cargo install ratatoskr-web --locked`. Then:
+
+<details>
+<summary><b>Claude Code</b></summary>
 
 ```sh
-cargo install ratatoskr-web --locked
 claude mcp add ratatoskr -- ratatoskr mcp
 ```
+</details>
 
-### Get in touch
+<details>
+<summary><b>Codex</b> (<code>~/.codex/config.toml</code>)</summary>
+
+```toml
+[mcp_servers.ratatoskr]
+command = "ratatoskr"
+args = ["mcp"]
+```
+</details>
+
+<details>
+<summary><b>Claude Desktop, Cursor</b> and most other clients</summary>
+
+```json
+{
+  "mcpServers": {
+    "ratatoskr": { "command": "ratatoskr", "args": ["mcp"] }
+  }
+}
+```
+</details>
+
+<details>
+<summary><b>VS Code</b> (<code>.vscode/mcp.json</code>)</summary>
+
+```json
+{
+  "servers": {
+    "ratatoskr": { "type": "stdio", "command": "ratatoskr", "args": ["mcp"] }
+  }
+}
+```
+</details>
+
+Or try it in a terminal:
+
+```sh
+ratatoskr search "tokio select macro"
+ratatoskr fetch https://www.rust-lang.org/
+```
+
+### 🛠️ Tools I use
+
+<p>
+  <img src="https://skillicons.dev/icons?i=rust,linux,git,githubactions,bash&theme=dark" alt="Rust, Linux, Git, GitHub Actions, Bash">
+</p>
+
+### 📬 Get in touch
 
 Found a bug or have an idea? [Open an issue](https://github.com/haszerobyte/Ratatoskr/issues)
-on the project.
+on ratatoskr. Stars are welcome too ⭐
