@@ -1,14 +1,14 @@
 <p align="center">
-  <img src="assets/banner.svg" width="100%" alt="zerobyte: small, fast tools for AI agents, written in Rust">
+  <img src="assets/banner.svg" width="100%" alt=">_ haszerobyte: small, fast tools for AI agents, written in Rust">
 </p>
 
 <p align="center">
-  <a href="https://github.com/haszerobyte/Ratatoskr"><img src="https://img.shields.io/badge/featured-ratatoskr-d4572a" alt="featured: ratatoskr"></a>
-  <img src="https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white" alt="Rust">
-  <img src="https://img.shields.io/badge/MCP-tools-6f42c1" alt="MCP">
+  <a href="https://github.com/haszerobyte/Ratatoskr"><img src="https://img.shields.io/badge/featured-ratatoskr-e5323b?labelColor=1a0a0c" alt="featured: ratatoskr"></a>
+  <img src="https://img.shields.io/badge/Rust-1a0a0c?logo=rust&logoColor=white" alt="Rust">
+  <img src="https://img.shields.io/badge/MCP-tools-e5323b?labelColor=1a0a0c" alt="MCP">
 </p>
 
-### 👋 Hi, I'm zerobyte
+### >_ Hi, I'm haszerobyte
 
 I build the plumbing that lets coding agents (Claude Code, Codex, Cursor, …)
 reach the outside world. My rules for it:
@@ -24,7 +24,7 @@ reach the outside world. My rules for it:
   <tr>
     <td width="140" align="center">
       <a href="https://github.com/haszerobyte/Ratatoskr">
-        <img src="https://raw.githubusercontent.com/haszerobyte/Ratatoskr/main/assets/logo.svg" width="110" alt="ratatoskr logo">
+        <img src="https://raw.githubusercontent.com/haszerobyte/Ratatoskr/main/assets/logo.svg?v=2" width="120" alt="ratatoskr logo">
       </a>
     </td>
     <td>
@@ -36,10 +36,10 @@ reach the outside world. My rules for it:
         <li><code>web_fetch</code>: pages and PDFs as clean text with their links kept</li>
         <li>An MCP server, a CLI and a Rust library, all in one 10&nbsp;MB binary</li>
       </ul>
-      <a href="https://crates.io/crates/ratatoskr-web"><img src="https://img.shields.io/crates/v/ratatoskr-web" alt="crates.io"></a>
-      <a href="https://docs.rs/ratatoskr-web"><img src="https://img.shields.io/docsrs/ratatoskr-web" alt="docs.rs"></a>
-      <a href="https://github.com/haszerobyte/Ratatoskr/releases"><img src="https://img.shields.io/github/v/release/haszerobyte/Ratatoskr" alt="release"></a>
-      <a href="https://github.com/haszerobyte/Ratatoskr/stargazers"><img src="https://img.shields.io/github/stars/haszerobyte/Ratatoskr?style=flat" alt="stars"></a>
+      <a href="https://crates.io/crates/ratatoskr-web"><img src="https://img.shields.io/crates/v/ratatoskr-web?color=e5323b&labelColor=1a0a0c" alt="crates.io"></a>
+      <a href="https://docs.rs/ratatoskr-web"><img src="https://img.shields.io/docsrs/ratatoskr-web?color=e5323b&labelColor=1a0a0c" alt="docs.rs"></a>
+      <a href="https://github.com/haszerobyte/Ratatoskr/releases"><img src="https://img.shields.io/github/v/release/haszerobyte/Ratatoskr?color=e5323b&labelColor=1a0a0c" alt="release"></a>
+      <a href="https://github.com/haszerobyte/Ratatoskr/stargazers"><img src="https://img.shields.io/github/stars/haszerobyte/Ratatoskr?color=e5323b&labelColor=1a0a0c" alt="stars"></a>
     </td>
   </tr>
 </table>
