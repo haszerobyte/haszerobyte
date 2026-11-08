@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" width="100%" alt=">_ haszerobyte: small, fast tools for AI agents, written in Rust">
+  <img src="assets/haszerobyte-banner.svg" width="100%" alt=">_ haszerobyte: small, fast tools for AI agents, written in Rust">
 </p>
 
 <p align="center">
@@ -18,13 +18,13 @@ reach the outside world. My rules for it:
 - **Polite.** Paces itself per site and backs off when a site says no.
 - **Safe by default.** Never lets an agent reach into your local network.
 
-### 🐿️ Featured: ratatoskr
+### >_ Featured: ratatoskr
 
 <table>
   <tr>
-    <td width="140" align="center">
+    <td width="180" align="center">
       <a href="https://github.com/haszerobyte/Ratatoskr">
-        <img src="assets/ratatoskr-logo.svg" width="120" alt="ratatoskr logo">
+        <img src="assets/ratatoskr-logo.svg" width="160" alt="ratatoskr logo">
       </a>
     </td>
     <td>
@@ -106,13 +106,13 @@ ratatoskr search "tokio select macro"
 ratatoskr fetch https://www.rust-lang.org/
 ```
 
-### 🛠️ Tools I use
+### >_ Tools I use
 
 <p>
   <img src="https://skillicons.dev/icons?i=rust,linux,git,githubactions,bash&theme=dark" alt="Rust, Linux, Git, GitHub Actions, Bash">
 </p>
 
-### 📬 Get in touch
+### >_ Get in touch
 
 Found a bug or have an idea? [Open an issue](https://github.com/haszerobyte/Ratatoskr/issues)
 on ratatoskr. Stars are welcome too ⭐
