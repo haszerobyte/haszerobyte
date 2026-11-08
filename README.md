@@ -24,7 +24,7 @@ reach the outside world. My rules for it:
   <tr>
     <td width="140" align="center">
       <a href="https://github.com/haszerobyte/Ratatoskr">
-        <img src="assets/ratatoskr.svg" width="120" alt="ratatoskr logo">
+        <img src="assets/ratatoskr.svg?v=4" width="120" alt="ratatoskr logo">
       </a>
     </td>
     <td>
