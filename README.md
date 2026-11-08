@@ -3,9 +3,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/haszerobyte/Ratatoskr"><img src="https://img.shields.io/badge/featured-ratatoskr-e5323b?labelColor=1a0a0c" alt="featured: ratatoskr"></a>
-  <img src="https://img.shields.io/badge/Rust-1a0a0c?logo=rust&logoColor=white" alt="Rust">
-  <img src="https://img.shields.io/badge/MCP-tools-e5323b?labelColor=1a0a0c" alt="MCP">
+  <a href="https://github.com/haszerobyte/Ratatoskr"><img src="assets/badges/featured.svg" alt="featured: ratatoskr"></a>
+  <img src="assets/badges/rust.svg" alt="Rust">
+  <img src="assets/badges/mcp.svg" alt="MCP">
 </p>
 
 ### >_ Hi, I'm haszerobyte
