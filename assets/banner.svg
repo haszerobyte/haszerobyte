@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-label="zerobyte: small, fast tools for AI agents, written in Rust">
+  <style>
+    .bg   { fill: #f6f8fa; }
+    .edge { stroke: #d0d7de; }
+    .name { fill: #1f2328; }
+    .sub  { fill: #59636e; }
+    .hex  { fill: #8c959f; }
+    .acc  { fill: #d4572a; }
+    @media (prefers-color-scheme: dark) {
+      .bg   { fill: #0d1117; }
+      .edge { stroke: #30363d; }
+      .name { fill: #e6edf3; }
+      .sub  { fill: #9198a1; }
+      .hex  { fill: #484f58; }
+      .acc  { fill: #f0883e; }
+    }
+    text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+  </style>
+
+  <rect class="bg edge" x="0.5" y="0.5" width="899" height="219" rx="12" stroke-width="1"/>
+
+  <!-- a faint hex dump down the right side: the "zero byte" motif -->
+  <g class="hex" font-size="13" opacity="0.55">
+    <text x="668" y="44">00 00 00 00 00 00 00 00</text>
+    <text x="668" y="66">00 00 00 00 00 00 00 00</text>
+    <text x="668" y="88">00 00 00 <tspan class="acc">00</tspan> 00 00 00 00</text>
+    <text x="668" y="110">00 00 00 00 00 00 00 00</text>
+    <text x="668" y="132">00 00 00 00 00 00 00 00</text>
+    <text x="668" y="154">00 00 00 00 00 00 00 00</text>
+    <text x="668" y="176">00 00 00 00 00 00 00 00</text>
+  </g>
+
+  <text class="acc" x="56" y="78" font-size="18" font-weight="600">0x00</text>
+  <text class="name" x="54" y="128" font-size="52" font-weight="700" letter-spacing="-1">zerobyte</text>
+  <text class="sub" x="56" y="166" font-size="17">small, fast tools for AI agents</text>
+  <text class="sub" x="56" y="190" font-size="17">written in Rust</text>
+</svg>
