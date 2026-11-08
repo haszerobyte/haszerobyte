@@ -24,7 +24,7 @@ reach the outside world. My rules for it:
   <tr>
     <td width="140" align="center">
       <a href="https://github.com/haszerobyte/Ratatoskr">
-        <img src="assets/ratatoskr.svg?v=4" width="120" alt="ratatoskr logo">
+        <img src="assets/ratatoskr-logo.svg" width="120" alt="ratatoskr logo">
       </a>
     </td>
     <td>
@@ -38,7 +38,7 @@ reach the outside world. My rules for it:
       </ul>
       <a href="https://crates.io/crates/ratatoskr-web"><img src="https://img.shields.io/crates/v/ratatoskr-web?color=e5323b&labelColor=1a0a0c" alt="crates.io"></a>
       <a href="https://docs.rs/ratatoskr-web"><img src="https://img.shields.io/docsrs/ratatoskr-web?color=e5323b&labelColor=1a0a0c" alt="docs.rs"></a>
-      <a href="https://github.com/haszerobyte/Ratatoskr/releases"><img src="https://img.shields.io/github/v/release/haszerobyte/Ratatoskr?color=e5323b&labelColor=1a0a0c" alt="release"></a>
+      <a href="https://github.com/haszerobyte/Ratatoskr/releases"><img src="https://img.shields.io/github/v/release/haszerobyte/Ratatoskr?label=release&color=e5323b&labelColor=1a0a0c" alt="release"></a>
       <a href="https://github.com/haszerobyte/Ratatoskr/stargazers"><img src="https://img.shields.io/github/stars/haszerobyte/Ratatoskr?style=flat&color=e5323b&labelColor=1a0a0c&label=stars" alt="stars"></a>
     </td>
   </tr>
